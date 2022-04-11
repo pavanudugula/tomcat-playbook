@@ -1,0 +1,4 @@
+[webservers]
+tomcat ansible_user=ec2-user 
+
+# this is the inventory file for remote server where we want to install nginx.
