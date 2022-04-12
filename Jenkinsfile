@@ -61,7 +61,7 @@ pipeline {
             
           steps{
             sshagent(['tomcat-pass']) {
-              sh "scp -r -o StrictHostKeyChecking=no target/chatapp.jar root@tomcat:/opt/tomcat/webapps"
+              sh "scp -r -o StrictHostKeyChecking=no target/chatapp.jar root@tomcat:/opt/containerd"
               }
 
           }
