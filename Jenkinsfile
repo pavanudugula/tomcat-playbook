@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('SCM Checkout') {
             steps{
-                git branch: 'chatapp', credentialsId: 'git-tok', url: 'https://github.com/pavanudugula/chatapp.git'
+                git branch: 'chatapp', credentialsId: 'git-tok', url: 'https://github.com/pavanudugula/tomcat-playbook.git'
             }
         }
         stage('MVN Build') {
@@ -42,7 +42,7 @@ pipeline {
            
           steps{
              
-                git "https://github.com/pavanudugula/chatapp.git"
+                git "https://github.com/pavanudugula/tomcat-playbook.git"
           }
        }
         stage('execute ansible') {
